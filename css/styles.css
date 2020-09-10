@@ -1,20 +1,8 @@
-header {
-    background-color: #2C3E50;
-    height: 100px;
-    position: fixed;
-    width: 100%;
-}
-
 body, html {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-}
-
-.navbar-brand {
-    font-size: 30px;
-    
 }
 
 a {
@@ -23,13 +11,30 @@ a {
     text-transform: uppercase;
 }
 
+header {
+    background-color: #2C3E50;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
 nav {
-    width: 1100;
+    width: 80%;
+    max-width: 1100px;
     height: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.menu-items {
+    display: flex;
+    list-style-type: none;
 }
 
 .menu-items a {
@@ -38,28 +43,29 @@ nav {
     display: block;
 }
 
-ul {
-    list-style: none;
-}
-
-.menu-items {
-    display: flex;
-}
-
-.profile img {
-    width: 240px;
+.menu-items a:hover {
+    color: #1ABC9C;
 }
 
 .profile-container {
     background-color: #1ABC9C;
     display: flex;
     justify-content: center;
-    padding-top: 200px; 
     padding-bottom: 50px;
+    padding-top: 200px; 
+}
+
+.profile {
+    text-align-last: center;
+    color: #FFF;
+}
+
+.profile img { /*profile avatar*/
+    width: 240px;
 }
 
 .profile-title {
-    font-size: 65px;
+    font-size: 45px;
     
 }
 
@@ -67,9 +73,11 @@ ul {
     font-size: 25px;
 }
 
-.profile {
-    text-align-last: center;
-    color: #FFF;
+.portfolio {
+    width: 80%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .portfolio-title {
@@ -79,21 +87,63 @@ ul {
     color: #2C3E50;
 }
 
-.portfolio {
-    width: 1200px;
-    height: 100%;
-    margin: 0 auto;
-}
-
 .portfolio-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.portfolio-container {
-    widows: 330px;
-    height: 240px;
+.portfolio-item {
+    width: 150px;
+    height: 110px; 
     margin: 20px;
     border-radius: 10px;
+}
+
+/* responsive section (media queries)*/
+@media (max-width: 1000px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .menu-items {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .profile-title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .navbar-brand {
+        display: block;
+        text-align: left;
+        padding: 20px;
+    }
+    
+    .profile-description {
+        font-size: 15px;;
+    }
+
+    .portfolio-title {
+        font-size: 30px;
+    }
+
+    .menu-items a {
+        padding: 15px;
+        font-size: 10px;
+        display: block;
+    }
 }
