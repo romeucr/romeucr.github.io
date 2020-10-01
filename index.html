@@ -1,54 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Romeu Castro Rodrigues">
-    <meta name="description" content="Hola! Yo soy Romeu y este es mi currículum">
-    <meta name="keywords" content="Romeu Castro Rodrigues, front-end, back-end, full stack, developer, Java, Javascript, CSS, HTML, OOP, curriculum, CV">
-    
-    <!--show small pic and text when linking in facebook, whatsapp, etc-->
-    <meta property="og:image" content="https://romeucr.github.io/img/portfolio1.svg">
-    <meta property="og:url" content="https://romeucr.github.io">
-    <meta property="og:description" content="Hola! Yo soy Romeu y este es mi currículum">
-    <meta property="og:title" content="Romeu Castro Rodrigues - Currículum">
+   <meta charset="UTF-8">
+   <title>Romeu Castro Rodrigues - Curriculum</title>
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
-    <title>Romeu Castro Rodrigues - Currículum</title>
+   <!-- Custom Styles -->
+   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="#" class="navbar-brand">Romeu Castro Rodrigues</a>
-            <ul class="menu-items">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+
+   <div class="body-content">
+      <div class="left-container">
+         <img src="img/profile.jpg" alt="">
+
+         <div id="name-age">
+            <h1>Romeu Castro Rodrigues</h1>
+            <h2>35 años - Brasileño</h2><br>
+         </div>
+         
+         <div class="peq-resumen">
+            <h3><i class="fas fa-caret-right"></i>&nbsp;PEQUEÑO RESUMEN</h3>
+            <p>
+            <ul>
+               <li>Certificado CISSP desde 2012.</li><br>
+               <li>Master en Seguridad de la Información y Graduado en Administración de Redes de Computación.</li><br>
+               <li>Última área de actuación: soporte técnico, resolución de incidencias, detección de errores en
+                  aplicación financiera.</li>
             </ul>
-        </nav>
-    </header>
-    
-    <section class="profile-container">
-        <div class="profile">
-            <img src="img/profile1.svg" alt="Profile Foto">
-            <h1 class="profile-title">Romeu Castro Rodrigues</h1>
-            <h3 class="profile-description">Frontend - JavaScript - React</h3>
-        </div>
-    </section>
-    
-    <section class="portfolio">
-        <h1 class="portfolio-title">Portfolio</h1>
-        <div class="portfolio-container">
-            <img class="portfolio-item" src="img/portfolio1.png" alt="img1">
-            <img class="portfolio-item" src="img/portfolio2.png" alt="img2">
-            <img class="portfolio-item" src="img/portfolio3.png" alt="img3">
-            <img class="portfolio-item" src="img/portfolio4.png" alt="img4">
-            <img class="portfolio-item" src="img/portfolio5.png" alt="img5">
-            <img class="portfolio-item" src="img/portfolio6.png" alt="img6">
-        </div>
-    </section>
+            <div class="contacto-container">
+               <dt>
+                  <h3><i class="fas fa-caret-right"></i>&nbsp;CONTACTO</h3>
 
-</body></html>
+                  <dl>
+                     <dt><i class="fas fa-phone"></i></dt>
+                     <dd>&nbsp;&nbsp;688 717919</dd>
+                     <dt><i class="fas fa-envelope"></i></dt>
+                     <dd>&nbsp;&nbsp;romeu.castro@gmail.com</dd>
+                     <dt><i class="fas fa-map-marker-alt"></i> </dt>
+                     <dd>&nbsp;&nbsp;Calle Artzamendi 15, 4B.<br>
+                        &nbsp;&nbsp;Bergara, Guipúzcoa.</dd>
+                  </dl>
+            </div>
 
+            <div class="social-container">
+               <h3><i class="fas fa-caret-right"></i>&nbsp;MY PROFILES</h3>
+               <p><i class="fab fa-linkedin"></i>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/romeu-castro"
+                     target="_blank">Linkedin</a></p>
+               <p><i class="fab fa-github"></i>&nbsp;&nbsp;<a href="https://github.com/romeucr"
+                     target="_blank">Github</a></p>
+               <p><i class="fab fa-stack-overflow" target="_blank"></i>&nbsp;&nbsp;<a href="https://stackoverflow.com/users/13969017/romeucr?tab=profile">Stack Overflow</a></p>
+            </div>
+
+
+         </div>
+      </div>
+
+      <div class="right-container">
+         <section class="formacion-academica">
+            <h1><i class="fas fa-caret-right"></i>&nbsp;FORMACIÓN ACADÉMICA</h1>
+            <h2>IBTA - Instituto Brasileiro de Tecnologia Avançada</h2>
+            <h3>Máster en Seguridad de la Información</h3>
+            <p>Septiembre 2007 - Septiembre 2008. São Paulo/SP - Brasil.</p>
+            <h3>Graduado en Administración de Redes de Computación</h3>
+            <p>Enero 2003 - Diciembre 2005, São José dos Campos/SP - Brasil.</p>
+         </section>
+         <br><br>
+         <section class="cert-cur-eve">
+            <h1><i class="fas fa-caret-right"></i>&nbsp;CERTIFICACIONES, CURSOS Y EVENTOS</h1>
+            <h3>CISSP - Certified Information Systems Security Professional</h3>
+            <p>Desde Junio 2012 (ACTIVO).</p>
+            <h3>Desarrollo web adaptativo con WordPress</h3>
+            <p>Organización: Inatec Centro de Estudios. Presencial.</p>
+            <p>Estado actual: Cursando.</p>
+            <p>Carga horaria: 270 horas.</p>
+            <h3>Spring Boot, Hibernate, REST, Ionic, JWT, S3, MySQL</h3>
+            <p>Organización: Educandoweb Cursos. Online.
+            <p>Estado actual: Cursando.</p>
+            <p>Carga horaria: 31 horas.</p>
+            <h3>Semana DevSuperior - Desarrollo y publicación de aplicación web Java con Spring
+               Boot (backend) y Typescript con ReactJS (frontend)</h3>
+            <p>Organización: Educandoweb Cursos. Online.
+            <p>Estado actual: Concluído en 20/09/2020. </p>
+            <p>Carga horaria: 12 horas.</p>
+            <h3>Java Completo(Java y OO. UML, JDBC, JavaFX, Spring Boot, JPA, Hibernate, MySQL, MongoDB)</h3>
+            <p>Organización: Educandoweb Cursos. Online. </p>
+            <p>Estado actual: Concluído en 04/08/2020. </p>
+            <p>Carga horaria: 50 horas.</p>
+         </section>
+
+         <br><br>
+         <section class="professional-xp">
+            <h1><i class="fas fa-caret-right"></i>&nbsp;EXPERIENCIA PROFESIONAL</h1>
+            <h2>ALMIS Informática Financiera / Soporte</h2>
+            <h3>Junio 2019 - Marzo 2020. Oñate/Guipúzcoa.</h3>
+            <ul>
+               <li>
+                  Soporte a usuarios, identificación y corrección de errores a través de la interacción con las bases de
+                  datos, logs de aplicación y depuración del código.
+               </li>
+               <li>
+                  Notificación de los errores al equipo de desarrollo.
+               </li>
+            </ul>
+
+            <div>
+               <h2>SERPRO - Servicio Federal de Procesamiento de Datos / Analista de Sistemas</h2>
+               <h3>Mayo 2018 - Febrero 2019. São Paulo/SP, Brasil.</h3>
+            </div>
+            <ul>
+               <li>
+                  Estructuración de la oferta del servicio de LaaS - Logging as a Service utilizando las herramientas
+                  Graylog, Elasticsearch, MongoDB y NGINX.
+               </li>
+               <li>
+                  Búsqueda de herramientas para la implementación de LaaS.
+               </li>
+               <li>
+                  Implementación, documentación y manutención de la oferta LaaS.
+               </li>
+               <li>
+                  Gestión, pruebas de capacidad y performance y soporte técnico del ambiente.
+               </li>
+            </ul>
+            <h3>Febrero 2015 - Mayo 2018. Brasília/DF y São Paulo/SP, Brasil.</h3>
+            <ul>
+               <li>
+                  Gestión, mejora y desarrollo de la Autoridad Certificadora de SERPRO y de sus otros sistemas internos.
+               </li>
+               <li>
+                  Gestión y estudio de proyectos sobre nuevas tecnologías relacionadas a ICP- BRASIL (PKI Brasileña)
+                  para su
+                  utilización en sistemas y soluciones internas integrándolos con las diferentes áreas de la empresa,
+                  clientes
+                  y proveedores.
+               </li>
+            </ul>
+            <h3>Junio 2007 - Febrero 2015. São Paulo/SP, Brasil.</h3>
+            <ul>
+               <li>
+                  Gestión de la Autoridad de Registro de SERPRO.
+               </li>
+               <li>Responsable por las actividades de creación y actualización del Plan de Continuidad de Negocios y
+                  Análisis
+                  de Riesgos.</li>
+               <li>Realización de pre-auditorías y acompañamiento de auditorías internas y externas. </li>
+               <li>Creación de políticas, procedimientos y manuales.</li>
+               <li>Instructor de cursos presenciales y online relacionados a la Seguridad Informática, Certificados
+                  Digitales, Análisis y Gestión de Riesgos, Plan de Continuidad de los Negocios, Grafoscopia y
+                  Documentoscopia.</li>
+               <li>
+                  Creación y actualización de scripts de call center y entrenamiento de diferentes equipos.
+               </li>
+            </ul>
+         </section>
+         <br><br>
+         <section class="idiomas">
+            <h1><i class="fas fa-caret-right"></i>&nbsp;IDIOMAS</h1>
+            <ul>
+               <li>
+                  Portugués (BR) - Lengua Materna.
+               </li>
+               <li>
+                  Inglés - Nivel avanzado (hablado/escrito).
+               </li>
+               <li>
+                  Español - Nivel avanzado (hablado/escrito).
+               </li>
+               <li>
+                  Euskera - Nível básico (hablado/escrito).
+               </li>
+            </ul>
+
+         </section>
+
+
+      </div>
+
+   </div>
+
+</body>
+
+</html>
