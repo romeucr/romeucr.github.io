@@ -23,9 +23,17 @@ h3 {
 
 #body-container {
    display: flex;
-   width: 1000px;
+   width: 850px;
    margin: 20px auto;
    background-color: #077BAF;
+}
+
+#download-cv {
+   margin-top: 50px;
+   margin-left: 450px;
+   position: fixed;
+   top: 0;
+   text-align: center;
 }
 
 #header-container {
@@ -66,7 +74,7 @@ h3 {
    text-align: justify;
 }
 
-#peq-resumen h1 {
+#peq-resumen h1
    text-align: left;
 }
 
@@ -93,7 +101,7 @@ h3 {
 }
 
 #contacto-container {
-   margin-top: 550px;
+   margin-top: 370px;
 }
 
 #social-container {
