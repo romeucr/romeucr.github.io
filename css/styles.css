@@ -21,54 +21,44 @@ h3 {
    font-size: 16px;
 }
 
-.right-container p, 
-.right-container li {
-   font-size: 14px;
-   color: grey;
+#body-container {
+   display: flex;
+   width: 1000px;
+   margin: 20px auto;
+   background-color: #077BAF;
 }
 
-.body-content {
- width: 1000px;
- margin: 20px auto;
- background-color: #077BAF;
+#header-container {
+   width: 30%;
 }
 
-.left-container {
-   float: left;
-   width: 300px;
-   padding: 0;
-   margin-right: 50px;
+#header-container img {
+   width: 100%;
 }
 
-.left-container li, 
+#header-container li {
+   padding-bottom: 10px;
+}
+
+#header-container li, 
 .fas fa-caret-right {
    margin-left: 15px;
    list-style-type: none;
 }
 
-.right-container {
+#main-container {
+   width: 70%;
    background-color: #fff;
-   height: 100%;
    padding: 60px 50px 60px;
-   margin: 0;
-   width: 700px;
-   margin-left: auto;
-
 }
 
-img {
-   width: 300px;
-   height: 380px;
+#main-container p, 
+#main-container li {
+   font-size: 14px;
+   color: grey;
 }
 
-.peq-resumen,
-.name-age {
-   padding: 25px;
-   color: #fff;
-   font-size: small;
-   text-align: justify;
-}
-
+#peq-resumen,
 #name-age {
    padding: 25px;
    color: #fff;
@@ -76,37 +66,37 @@ img {
    text-align: justify;
 }
 
-.peq-resumen h1 {
+#peq-resumen h1 {
    text-align: left;
 }
 
-.right-container h2,
-.right-container h3,
-.right-container p {
+#main-container h2,
+#main-container h3,
+#main-container p {
    padding-left: 13px;
 }
 
-.right-container ul {
+#main-container ul {
    padding-left: 30px;
 }
 
-.right-container h2 {
+#main-container h2 {
    margin-top: 15px;
 }
 
-.right-container h3 {
+#main-container h3 {
    margin-top: 15px;
 }
 
-h2 + h3:first-of-type {
-   margin: 0;
+#main-container h2 + h3:first-of-type {
+   margin-top: 0;
 }
 
-.contacto-container {
+#contacto-container {
    margin-top: 550px;
 }
 
-.social-container {
+#social-container {
    margin-top: 25px;
 }
 
