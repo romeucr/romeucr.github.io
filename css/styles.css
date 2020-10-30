@@ -10,7 +10,7 @@ html {
 
 body {
    font-family: 'Roboto', sans-serif;
-   background-color: #fff;
+   background-color: #eee;
 }
 
 a {
@@ -56,7 +56,7 @@ i {
 }
 
 #contact-container,
-#social-container {
+.social-container {
    flex-basis: 0;
    flex-grow: 1;
    display: flex;
@@ -71,12 +71,12 @@ i {
 }
 
 #contact-container h3, 
-#social-container h3 {
+.social-container h3 {
    text-align: center;
    display: none; /*mostrar na versao grande */
 }
 
- #social-container a {
+ .social-container a {
    color: #fff;
 }
 
@@ -100,6 +100,8 @@ i {
    text-align: left;
    outline: none;
    transition: 0.4s;
+   font-size: 1.6rem;
+   font-weight: 700;
  }
  
  .active, 
@@ -131,7 +133,6 @@ i {
    max-height: 0;
    overflow: hidden;
    transition: max-height 0.2s ease-out;
-   
  }
 
  .panel-content {
@@ -258,15 +259,15 @@ i {
       margin-top: 35px;
    }
    
-   #social-container {
+   .social-container {
       margin-top: 25px;
    }
    
-   #social-container p {
+   .social-container p {
       margin-left: 15px;
    }
    
-   #social-container p:first-of-type {
+   .social-container p:first-of-type {
       margin-top: 5px;
    }
    
@@ -304,7 +305,7 @@ i {
    .section-title,
    #photo-profile,    
    #contact-container h3, 
-   #social-container h3 {
+   .social-container h3 {
       display: inline-block;
    }
    
@@ -314,7 +315,7 @@ i {
    }
    
    #contact-container,
-   #social-container {
+   .social-container {
       display: inline-block;
    }
  }
