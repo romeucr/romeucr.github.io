@@ -152,7 +152,7 @@ i {
    margin-top: 10px;
  }
 
- @media (min-width: 1550px) {
+ @media (min-width: 550px) {
    body {
       background-color: grey;
    }
