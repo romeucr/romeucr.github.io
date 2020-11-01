@@ -261,6 +261,7 @@ i {
    
    .social-container {
       margin-top: 25px;
+      text-align: left;
    }
    
    .social-container p {
@@ -308,7 +309,7 @@ i {
    .social-container h3 {
       display: inline-block;
    }
-   
+
    #img-name-age {
       padding-top: 0;
       position: static;
@@ -318,4 +319,11 @@ i {
    .social-container {
       display: inline-block;
    }
+
+   .section-title {
+      margin-top: 25px;
+   }
+
+   .formacion-academica h1 {
+      margin-top: 0;
  }
