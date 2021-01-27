@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 0.625em;
+}
+
+a {
+    text-decoration: none;
+    color: darkgrey;
+}
+
+.body-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*** SITE ***/
+
+#site-header {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#site-header-title {
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-top: 50px;
+}
+
+#site-nav-menu,
+#site-span-menu {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+#site-nav-menu li {
+    padding: 10px;
+}
+
+#site-span-menu {
+    display: block;
+    border-top: 1px solid;
+    padding: 10px;
+}
+
+#site-footer {
+    margin: 100px 10px 50px;
+    color: grey;
+}
+
+#site-footer a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: grey;
+}
+
+#site-footer p a:hover {
+    text-decoration-color: black;
+}
+
+/*  INDEX */
+
+#index-galeria {
+    list-style-type: none;
+}
+
+.index-galeria-img {
+    margin: 0 10px;
+    margin-bottom: 25px;
+}
+
+.index-galeria-img figcaption {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: grey;
+    margin-top: 5px;
+}
+
+#index-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#index-galeria a {
+    width: 50%;
+}
+
+#index-galeria a:hover img {
+    opacity: 0.9;
+}
+
+.index-galeria-img img {
+    width: 100%;
+}
+
+/* ABOUT */
+
+.about-img {
+    margin: 0 10px;
+}
+
+.about-img a img {
+    width: 100%;
+}
+
+.about-text-title {
+    margin: 30px 10px;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.about-text {
+    margin: 0 10px;
+    color: gray;
+    line-height: 25px;
+}
+
+.about-text:last-of-type {
+    margin-top: 15px;
+}
+
+/* BLOG */
+
+.blog-img {
+    margin: 0 10px;
+}
+
+.blog-img img {
+    width: 100%;
+}
+
+.article-title {
+    margin: 30px 10px 10px;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+.article-time {
+    margin: 0px 10px;
+    color: darkgrey;
+    font-size: 1.3rem;
+}
+
+.article-text {
+    margin: 30px 10px;
+    color: gray;
+    line-height: 25px;
+}
+
+.article-footer {
+    margin: 0 10px 100px;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.share-link:hover {
+    color: black;
+}
+
+.like-link:hover i {
+    color: red;
+}
+
+.like-link:hover .like-text {
+    color: black;
+}
+
+.aside-title {
+    margin: 0px 10px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.aside-post-title {
+    margin: 0px 10px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    color: #737373;
+}
+
+.aside-post-title:hover {
+    color: black;
+}
+
+.aside-time {
+    margin: 0px 10px 50px;
+    color: darkgrey;
+    font-size: 1.3rem;
+}
+
+
+/** RESPONSIVE **/
+
+@media (min-width: 750px) {
+    .body-container {
+        width: 90%;
+    }
+
+    /** SITE **/
+    #site-header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 10px 100px;
+    }
+
+    #site-header-title {
+        margin: 0;
+    }
+    #site-nav-menu {
+        display: flex;
+        font-size: 1.2rem;
+    }
+
+    #site-span-menu {
+        display: none;
+    }
+
+    #site-nav-menu li {
+        padding: 0 20px;
+    }
+
+    #site-nav-menu a:hover {
+        color: black;
+    }
+
+    /** INDEX **/
+    #index-galeria a {
+        width: 33.33%;
+    }
+
+    /** ABOUT **/
+    #about-main {
+        display: flex;
+    }
+
+    .about-img {
+        flex-basis: 0;
+        flex-grow: 2;
+        margin-right: 90px;
+    }
+
+    .about-text-container {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    
+    /** BLOG **/
+    .blog-main-container {
+        display: flex;
+    }
+
+    #blog-main,
+    #blog-aside {
+        flex-basis: 0;
+    }
+    
+    #blog-main {
+        flex-grow: 3;
+        margin-right: 50px;
+    }
+    #blog-aside {
+        flex-grow: 1;
+    }
+}
