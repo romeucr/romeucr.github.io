@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="./img/dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--rules">❓ Rules</button>
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>Pig Game Rules 🎲</h1>
+        <ul>
+          <li>The Player 1 starts the game and rolls the dice.</li>
+          <li>If the number showed is different from one, then it is added to his current score 
+            and the player can roll the dice again or hold the current score, adding it to his overall score.
+          </li>
+          <li>If the player rolls the dice and the number showed is one, then the player loses his current score and his turn.</li>
+          <li>The winner is the first player to get 100 points. 🥇</li>
+        </ul>
+      </div>
+      <div class="overlay hidden"></div>
+    
+    </main>
+    <script src="./scripts/script.js"></script>
+    </div>
+  </body>
+</html>
