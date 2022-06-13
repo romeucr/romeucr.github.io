@@ -20,8 +20,6 @@ function pageTransitions() {
    // active section
    allSections.addEventListener('click', (e) => {
       const id = e.target.dataset.id
-      console.log(id)
-      console.log(e.target)
       if (id) {
          sectBtns.forEach((btn) => {
             btn.classList.remove('active')
