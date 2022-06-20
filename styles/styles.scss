@@ -489,6 +489,9 @@ section {
          line-height: 2rem;
       }
 
+      address { 
+         font-style: inherit; 
+      }
       .contact-info {
          .contact-item {
             display: flex;
@@ -513,6 +516,7 @@ section {
 
    }
    .right-contact {
+      display: none;
       flex: 3;
       margin-left: 3rem;
       .input-control {

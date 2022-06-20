@@ -672,6 +672,10 @@ section {
   line-height: 2rem;
 }
 
+.contact-content-con .left-contact address {
+  font-style: inherit;
+}
+
 .contact-content-con .left-contact .contact-info .contact-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -707,6 +711,7 @@ section {
 }
 
 .contact-content-con .right-contact {
+  display: none;
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
