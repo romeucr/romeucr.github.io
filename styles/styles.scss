@@ -504,7 +504,7 @@ section {
          .contact-item {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            // justify-content: space-between;
             p {
                margin: .3rem 0 !important;
                padding: 0 !important;
@@ -512,6 +512,7 @@ section {
             .icon {
                display: grid;
                grid-template-columns: 40px 1fr;
+               width: 150px;
                i {
                   display: flex;
                   align-items: center;
