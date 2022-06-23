@@ -196,6 +196,7 @@ section {
             object-fit: cover;
             transition: var(--transition-default);
             filter: grayscale(100%);
+            border-radius: 50px;
             &:hover {
                filter: grayscale(0)
             }
@@ -476,7 +477,10 @@ section {
       &:hover .hover-item {
          opacity: 1;
          transform: scale(1);
-
+         .tag {
+            color: var(--color-secondary);
+            font-weight: 700;
+         }
       }
    }
 }
@@ -521,8 +525,6 @@ section {
             }
          }
       }
-
-
    }
    .right-contact {
       display: none;
